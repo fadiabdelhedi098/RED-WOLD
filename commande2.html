@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>RED world - Commande</title>
+  <link rel="stylesheet" href="commande.css">
+</head>
+<body>
+
+  <form class="carte" action="https://formspree.io/f/mbggybnj" method="post">
+    <h1>RED world</h1>
+    <p>Remplissez le formulaire pour passer votre commande.</p>
+
+    <!-- Partie 1 : informations du client -->
+    <h2>Vos informations</h2>
+
+    <label for="nom">Nom complet</label>
+    <input type="text" id="nom" name="nom" placeholder="Ex. Ahmed Ben Ali" required>
+
+    <label for="tel">Téléphone</label>
+    <input type="tel" id="tel" name="tel" placeholder="Ex. 20 123 456" required>
+
+    <!-- Partie 2 : livraison -->
+    <h2>Livraison</h2>
+
+    <label for="ville">Ville</label>
+    <input type="text" id="ville" name="ville" placeholder="Ex. Tunis" required>
+
+    <label for="adresse">Adresse</label>
+    <input type="text" id="adresse" name="adresse" placeholder="Rue, immeuble, appartement" required>
+
+    <!-- Partie 3 : article -->
+    <h2>Votre article</h2>
+
+    <label for="article">Article</label>
+    <input type="text" id="article" name="article" placeholder="Ex. T-shirt RED classique" required>
+
+    <label for="taille">Taille</label>
+    <select id="taille" name="taille" required>
+      <option value="">Choisir...</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+
+    <label for="couleur">Couleur</label>
+    <input type="text" id="couleur" name="couleur" placeholder="Ex. Noir" required>
+
+    <label for="quantite">Quantité</label>
+    <input type="number" id="quantite" name="quantite" value="1" min="1" required>
+
+    <label for="remarque">Remarque (facultatif)</label>
+    <textarea id="remarque" name="remarque" rows="4"></textarea>
+
+    <p class="paiement">Paiement à la livraison.</p>
+
+    <button type="submit">Confirmer la commande</button>
+
+  </form>
+
+</body>
+</html>

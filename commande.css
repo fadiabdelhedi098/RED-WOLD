@@ -1,0 +1,81 @@
+/* Le fond de la page : dégradé blanc vers or */
+body {
+  background: linear-gradient(to bottom right, white, #c9a24b);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+/* La carte noire au milieu */
+.carte {
+  background-color: #1b1b1d;
+  color: white;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Le titre RED world */
+h1 {
+  font-family: Georgia, serif;
+  color: #c9a24b;
+  margin-top: 0;
+}
+
+/* Les titres des parties */
+h2 {
+  font-family: Georgia, serif;
+  color: #c9a24b;
+  font-size: 18px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 8px;
+  margin-top: 30px;
+}
+
+/* Les étiquettes */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Les champs du formulaire */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a2a2d;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Quand on clique sur un champ : bordure dorée */
+input:focus, select:focus, textarea:focus {
+  border-color: #c9a24b;
+  outline: none;
+}
+
+.paiement {
+  margin-top: 20px;
+}
+
+/* Le bouton jaune doré */
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to right, #e8c25a, #f7dc6f);
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Quand la souris passe sur le bouton */
+button:hover {
+  background: #d9a82e;
+}
